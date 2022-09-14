@@ -6,7 +6,16 @@ function App() {
 
   return (
     <div>
-      <div>Hello World</div>
+      <table>
+        <thead>
+          <tr>Name</tr>
+          <tr>Post</tr>
+        </thead>
+        <tbody>
+          <td>Jalen Arrington</td>
+          <td>Hello World</td>
+        </tbody>
+      </table>
     </div>
   );
 }
