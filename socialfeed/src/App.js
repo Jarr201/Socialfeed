@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from 'react';
 
 function App() {
+  
+  const [posts, setPosts] = useState([{name: 'Jalen Arrington', post: 'Hello World'}])
+
   return (
-    <div className="App">
+    <div>
       <div>Hello World</div>
     </div>
   );
