@@ -3,14 +3,13 @@ import DisplayPosts from './Components/DisplayPosts/DisplayPosts.jsx';
 import CreatePost from './Components/CreatePost/CreatePost.jsx';
 
 function App() {
-  const [post, setPosts] = useState('');
-  const [name, setName] = useState('');
+  const [post, setPosts] = useState(['1']);
+  const [name, setName] = useState(['2']);
 
   
-
   return (
     <div>
-      <DisplayPosts parentPosts={post} />
+      <DisplayPosts parentPost={post} />
     </div>
   )};
 

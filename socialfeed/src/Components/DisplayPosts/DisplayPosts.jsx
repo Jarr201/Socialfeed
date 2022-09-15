@@ -6,7 +6,7 @@ const DisplayPosts = (props) => {
           <tr>Post</tr>
         </thead>
         <tbody>
-          {props.parentPosts.map((post) => {
+          {props.parentPost.map((post) => {
             return (
               <tr>
                 <td>{post.name}</td>
