@@ -6,11 +6,11 @@ const DisplayPosts = (props) => {
           <tr>Post</tr>
         </thead>
         <tbody>
-          {props.parentPost.map((post) => {
+          {props.parentEntries.map((posts) => {
             return (
               <tr>
-                <td>{post.name}</td>
-                <td>{post.post}</td>
+                <td>{posts.name}</td>
+                <td>{posts.post}</td>
               </tr>
             );
           })}

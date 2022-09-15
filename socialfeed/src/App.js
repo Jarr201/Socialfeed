@@ -3,13 +3,12 @@ import DisplayPosts from './Components/DisplayPosts/DisplayPosts.jsx';
 import CreatePost from './Components/CreatePost/CreatePost.jsx';
 
 function App() {
-  const [post, setPosts] = useState(['1']);
-  const [name, setName] = useState(['2']);
-
+  const [entries, setEntries] = useState([{name: 'Jalen Arrington', post: 'Blah Blah'}]);
   
   return (
     <div>
-      <DisplayPosts parentPost={post} />
+      <DisplayPosts parentEntries={entries} />
+      <CreatePost parentEntries={entries} />
     </div>
   )};
 
