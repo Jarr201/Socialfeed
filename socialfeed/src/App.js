@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts.jsx';
+import CreatePost from './Components/CreatePost/CreatePost.jsx';
 
 function App() {
+  const [post, setPosts] = useState('');
+  const [name, setName] = useState('');
+
   
-  const [entries, setPosts] = useState([{name: 'Jalen Arrington', post: 'Hello World'}])
 
   return (
     <div>
-      <DisplayPosts parentPosts={entries} />
+      <DisplayPosts parentPosts={post} />
     </div>
-  );
-}
+  )};
 
 export default App;
