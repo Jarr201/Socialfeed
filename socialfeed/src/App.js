@@ -1,21 +1,13 @@
 import React, { useState } from 'react';
+import DisplayPosts from './components/DisplayPosts';
 
 function App() {
   
-  const [posts, setPosts] = useState([{name: 'Jalen Arrington', post: 'Hello World'}])
+  const [entries, setPosts] = useState([{name: 'Jalen Arrington', post: 'Hello World'}])
 
   return (
     <div>
-      <table>
-        <thead>
-          <tr>Name</tr>
-          <tr>Post</tr>
-        </thead>
-        <tbody>
-          <td>Jalen Arrington</td>
-          <td>Hello World</td>
-        </tbody>
-      </table>
+      
     </div>
   );
 }
