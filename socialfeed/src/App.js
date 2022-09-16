@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DisplayPosts from './Components/DisplayPosts/DisplayPosts.jsx';
 import CreatePost from './Components/CreatePost/CreatePost.jsx';
+import './App.css';
 
 function App() {
   const [entries, setEntries] = useState(['']);
