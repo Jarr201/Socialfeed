@@ -12,10 +12,20 @@ function App() {
   }
 
   return (
-    <div>
-      <DisplayPosts parentEntries={entries} />
-      <CreatePost addNewPostProperty={addNewPost} />
+    <div className='container-fluid'>
+      <div className='row'>
+        <div className='col-md-6'>
+          <div className='border-box'>
+          <DisplayPosts parentEntries={entries} />
+        </div>
+        <div className='col-md-6'>
+        <div className='border-box'>
+        <CreatePost addNewPostProperty={addNewPost} />
+        </div>
+      </div>
     </div>
+  </div>
+  </div>
   )};
 
 export default App;
